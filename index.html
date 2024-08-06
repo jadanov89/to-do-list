@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TODO LIST</h1>
+        <div id="line"></div>
+
+        <div class="task-input">
+            <div class="task-input__h">
+                <input type="text" class="input-add__task" name="todo" placeholder="Add Task..." value="">
+                <div class="flex-button">
+                    <button type="button" value="➕" name='add' class="input-add__btn" title="Add Task">➕</button>
+                    <button type="button" value="❌" name='delete' class="input-del__btn" title="Remove All Task">❌</button>
+                </div>
+            </div>
+            <textarea placeholder="Add Task Description..." cols="30" rows="5" name="text" id="text" title="Add Text..." class="input-task__textarea" maxLength="120"></textarea>
+        </div>
+        <div class="new-tasks"></div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
